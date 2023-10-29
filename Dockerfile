@@ -1,4 +1,4 @@
-FROM balenalib/raspberrypi4-64-debian-python:3.11.5
+FROM balenalib/raspberrypi4-64-debian-python:latest
 
 WORKDIR /night-monitor
 
