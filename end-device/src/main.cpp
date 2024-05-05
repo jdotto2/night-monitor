@@ -19,8 +19,8 @@
 #define CHECK_LIGHTS_INTERVAL 1000UL // 1000 milliseconds (1 second)
 #define CHECK_TEMPERATURE_INTERVAL 5000UL // 300000 milliseconds (5 minutes)
 
-const char START[] = "19:27:00"; // start tracking night activity at 6 PM
-const char END[] = "19:28:00"; // stop tracking night activity at 6 AM
+const char START[] = "22:00:00"; // start tracking night activity at 10 PM
+const char END[] = "5:00:00"; // stop tracking night activity at 5 AM
 
 char timestamp[20];  // "yyyy-mm-dd hh:mm:ss" plus null-terminator
 char lights_payload[42]; // "{"lights":1,"time":"yyyy-mm-dd hh:mm:ss"}" plus null-terminator
