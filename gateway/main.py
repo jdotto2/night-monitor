@@ -48,6 +48,8 @@ while True:
     try:
         end_device_data_string = end_device.readline().decode('utf-8').rstrip()
         end_device_data_dict = json.loads(end_device_data_string)
+        end_device_data_dict['location'] = 'bedroom'
+        end_device_data_string = json.dumps(end_device_data_dict)
 
         if 'lights' in end_device_data_dict:
             client.publish("data/lights", payload=end_device_data_string, qos=1)
